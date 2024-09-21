@@ -23,8 +23,8 @@ const NavBar = () => {
       </Button>
       {user?.avatar === null ? (
         <Avatar sx={{ bgcolor: deepPurple[500] }}>
-          {user?.firstName.charAt(0)}
-          {user?.lastName.charAt(0)}
+          {user?.firstName?.charAt(0) || ""}
+          {user?.lastName?.charAt(0) || ""}
         </Avatar>
       ) : (
         <Avatar
