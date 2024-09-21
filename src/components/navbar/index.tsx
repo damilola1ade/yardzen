@@ -28,7 +28,8 @@ const NavBar = () => {
         </Avatar>
       ) : (
         <Avatar
-          src={`${process.env.NEXT_PUBLIC_BASE_URL}/${user?.avatar}`}
+          // src={`${process.env.NEXT_PUBLIC_BASE_URL}/${user?.avatar}`}
+          src={user?.avatar}
           sx={{ width: 56, height: 56 }}
         />
       )}
